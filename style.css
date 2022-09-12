@@ -1,0 +1,249 @@
+@font-face {
+    font-family: arial;
+    src: url(./fonts/ArialTh.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.fix-width{
+    width: 1300px;
+    margin: auto;
+}
+.clear-fix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+h1,h2,h3,p,a,li,h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* header-section */
+
+.header-section{
+    background: url(./img/ia_200000019.jpg) no-repeat center center;
+    background-size: cover;
+}
+.header-logo-menu-content {
+    background-color: rgba(0, 0, 0, 0.233);
+    height: 90px;
+}
+.header-logo-left{
+    width: 30%;
+}
+.header-logo-left img {
+    margin-left: 87px;
+    width: 206px;
+    margin-top: 16px;
+}
+
+.header-menu-right{
+    width: 70%;
+}
+.menu ul {
+    text-align: right;
+    margin-right: 195px;
+    margin-top: 10px;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: .5s;
+    border-bottom: 2px solid transparent;
+}
+.menu ul li:hover > a{
+    background: rgb(128, 109, 109);
+}
+/* dropdown-menu */
+.menu ul li{
+    position: relative;
+}
+.menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgb(3, 163, 238);
+    width: 200px;
+}
+.menu ul li ul li{
+    display: block;
+}
+.menu ul li ul li a{
+    display: block;
+    border-bottom: none;
+    font-size: 20px;
+    transition: .5s;
+    text-decoration: none;
+}
+.menu ul li ul li:hover > a{
+    background: rgb(43, 101, 139);
+}
+.menu ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+.header-banar-content{
+    padding: 165px 0;
+}
+.header-banar-content .title {
+    text-transform: uppercase;
+    color: #fff;
+   
+}
+.header-banar-content .title h1 {
+    text-transform: capitalize;
+    font-size: 120px;
+}
+.header-banar-content .title p {
+    opacity: .8;
+    padding: 64px 0pc;
+    font-size: 53px;
+}
+.banar-button{}
+.defolt-btn {
+    padding: 13px 38px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    background: #c9852d;
+    border: none;
+    font-size: 19px;
+    border-radius: 30px;
+}
+
+.service-section {
+    background: #ededed;
+}
+.service-content{}
+.service-item {
+    width: 21%;
+    background: #fff;
+    padding: 30px 20px;
+    margin-right: 2%;
+    margin-left: 2%;
+    border-radius: 2px;
+    box-shadow: 0px 0px 13px 4px #ddd;
+}
+.service-item:last-child{
+    margin-right: 0;
+}
+.service-item .logo{
+    text-align: center;
+}
+.service-item .logo img {
+    margin-bottom: 35px;
+}
+.service-item h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+.service-item p {
+    font-size: 17px;
+    opacity: .8;
+    margin: 29px 0px;
+}
+.service-item .defolt-btn {
+    text-transform: capitalize;
+    border-radius: 7px;
+    font-size: 15px;
+    padding: 10px 26px;
+}
+/* video-section */
+.banner-bottom{
+    background: #f7f9ff;
+    padding: 100px 0;
+}
+.video-left{
+    width: 48%;
+}
+.video-content-right{
+    width: 48%;
+}
+.video-content-right h3 {
+    font-size: 51px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+}
+.video-content-right p {
+    color: #767676;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+.video-content-right h2 {
+    text-transform: capitalize;
+    font-size: 19px;
+}
+.video-btn .defolt-btn {
+    border-radius: 5px;
+    background: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 8px 24px;
+}
+
+/* contrac-sec */
+
+.form-left{
+    width: 40%;
+}
+.de-input {
+    width: 519px;
+    height: 41px;
+    margin: 10px 0px;
+    padding: 0px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    border: 1px solid black;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.form-left .defolt-btn {
+    border-radius: 5px;
+    padding: 7px 13px;
+    margin: 10px;
+}
+.right-img{
+    width: 45%;
+}
+.right-img img {
+    width: 100%;
+    min-height: 600px;
+}
+ 
